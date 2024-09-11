@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="button-group">
-                    <input type="submit" value="Login" class="btn">
+                     <a href="adminDashboard.html" class="btn-back">Login</a>
                     <a href="home.html" class="btn-back">Back to Home</a>
                 </div>
             </form>
