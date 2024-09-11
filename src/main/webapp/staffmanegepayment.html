@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - ABC Restaurant</title>
+    <link rel="stylesheet" href="staffmanegepayment.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h1>Staff Dashboard</h1>
+        <ul>
+            <li><a href="staffDashboard">Dashboard</a></li>
+            <li><a href="staffreservation.html">Manage Reservations</a></li>
+            <li><a href="staffresponse.html">Respond to Queries</a></li>
+            <li><a href="staffmanegepayment.html">Manage Payments</a></li>
+            <li><a href="login.jsp" id="logout">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+    <header>
+       
+    </header>
+
+
+
+     
+
+        <div class="container">
+            <h2>Manage Payments</h2>
+            
+            <!-- Payment Form -->
+            <form id="payment-form">
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" required>
+                    <option value="" disabled selected>Select method</option>
+                    <option value="Cash">Cash</option>
+                    <option value="Card">Card</option>
+                </select>
+    
+                <label for="amount-deposit">Amount Deposit</label>
+                <input type="number" id="amount-deposit" required>
+    
+                <label for="balance">Balance</label>
+                <input type="number" id="balance" required>
+    
+                <label for="payment-status">Payment Status</label>
+                <select id="payment-status" required>
+                    <option value="" disabled selected>Select status</option>
+                    <option value="Complete">Complete</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Failed">Failed</option>
+                </select>
+    
+                <button type="submit">Add Payment</button>
+            </form>
+    
+            <!-- Payment Table -->
+            <h2>Payment List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Payment ID</th>
+                        <th>Payment Method</th>
+                        <th>Amount Deposit</th>
+                        <th>Balance</th>
+                        <th>Payment Status</th>
+                    </tr>
+                </thead>
+                <tbody id="payment-table-body">
+                    <!-- Dynamic rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+    <script src="staffmanegepayment.js"></script>
+</body>
+</html>

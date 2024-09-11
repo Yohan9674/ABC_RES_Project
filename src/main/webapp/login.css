@@ -1,0 +1,120 @@
+/* Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+     background-image: url('img/loginback.jpg');
+     background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
+}
+
+/* Login container */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #444;
+}
+
+/* Input styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.input-group input:focus {
+    background-color: #eaeaea;
+    outline: none;
+}
+
+/* Error message styling */
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Button group styling */
+.button-group {
+    margin-top: 20px;
+}
+
+.btn, .btn-back {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back {
+    background-color: #ff6347;
+}
+
+.btn:hover, .btn-back:hover {
+    background-color: #43a047;
+}
+
+.btn-back:hover {
+    background-color: #e74c3c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .btn, .btn-back {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

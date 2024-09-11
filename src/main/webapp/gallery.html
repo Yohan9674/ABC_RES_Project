@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Restaurant | Authentic Sri Lankan Cuisine</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logow.png" alt="ABC Restaurant Logo"> <!-- Replace with your logo path -->
+            </div>
+            <ul class="nav-links">
+               <li><a href="home.html">Home</a></li>
+                <li><a href="ourmenu.html">Our Menu</a></li>
+                <li><a href="services.html">Services and Facilities</a></li>
+                <li><a href="reservation.jsp">Reservations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.jsp">Contact</a></li>
+            </ul>
+            <div class="header-buttons">
+                <a href="#login" class="btn login-btn">Login</a>
+                <a href="#register" class="btn register-btn">Register</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="img/slide1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="img/slide2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="img/slide3.jpg" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="img/slide4.jpg" alt="Slide 4">
+            </div>
+            <div class="slide">
+                <img src="img/slide5.jpg" alt="Slide 5">
+            </div>
+        </div>
+        <div class="controls">
+            <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+            <span class="next" onclick="plusSlides(1)">&#10095;</span>
+        </div>
+    </div>
+
+
+
+     <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img/g1.png" alt="Restaurant Interior">
+            </div>
+            <div class="gallery-item">
+                <img src="img/g2.jpg" alt="Delicious Dish">
+            </div>
+            <div class="gallery-item">
+                <img src="img/g3.webp" alt="Outdoor Seating">
+            </div>
+            <div class="gallery-item">
+                <img src="img/g4.jpg" alt="Private Dining">
+            </div>
+            <div class="gallery-item">
+                <img src="img/g5.jpg" alt="Special lightning">
+            </div>
+            <div class="gallery-item">
+                <img src="img/g6.jpg" alt="Signature Cocktail">
+            </div>
+            <div class="gallery-item">
+                <img src="img/g7.png" alt="Chef's Special">
+            </div>
+            <div class="gallery-item">
+                <img src="img/g8.webp" alt="Bar facilities">
+            </div>
+            <div class="gallery-item">
+                <img src="img/g9.jpg" alt="Outdoor facilities">
+            </div>
+            <div class="gallery-item">
+                <img src="img/g10.jpg" alt="Live Entertainment facilities">
+            </div>
+            <div class="gallery-item">
+                <img src="img/g12.jpg" alt="Meeting facilities">
+            </div>
+            <div class="gallery-item">
+                <img src="img/g14.webp" alt="Kids Playing facilities">
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-image">
+        <div id="caption"></div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logow.png" alt="Company Logo"> <!-- Replace with your logo path -->
+                <p class="footer-description">Subscribe to our newsletter to receive  <br>
+                    upcoming promotions and events at  <br> ABC Restaurant</p>
+            </div>
+    
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h5>ADDRESS</h5>
+                    <p>
+                        ABC RESTAURANT,<br>
+                        No 42, Nawam Mawatha,<br>
+                        Colombo 02,<br>
+                        Sri Lanka.
+                    </p>
+                </div>
+    
+                <div class="footer-section">
+                    <h5>QUICK LINKS</h5>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="ourmenu.html">Our Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                  
+                </div>
+    
+                <div class="footer-section">
+                    <h5>OPENING HOURS</h5>
+                    <ul>
+                        <p>      MONDAY – THURSDAY      <br>   12.00 – 3.30 PM & 6.30 -10.30 PM      <br> <br>   </p>       
+                        <p>      FRIDAY – SUNDAY      <br>   12.00 – 3.30 PM & 6.30 -10.30 PM        </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <script src="gallery.js"></script>
+    
+</body>
+</html>

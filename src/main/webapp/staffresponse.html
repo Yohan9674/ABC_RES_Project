@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - ABC Restaurant</title>
+    <link rel="stylesheet" href="staffresponse.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h3>Staff Dashboard</h3>
+        <ul>
+           <li><a href="staffDashboard">Dashboard</a></li>
+            <li><a href="staffreservation.html">Manage Reservations</a></li>
+            <li><a href="staffresponse.html">Respond to Queries</a></li>
+            <li><a href="staffmanegepayment.html">Manage Payments</a></li>
+            <li><a href="login.jsp" id="logout">Logout</a></li>
+
+        
+        </ul>
+    </div>
+
+    <div class="main-content">
+    <header>
+       
+    </header>
+   
+   
+   
+   </br> </br> </br> </br>
+    
+   
+    <div class="container">
+        <h1>Manage Queries</h1>
+
+        <!-- Queries Table -->
+        <h2>Queries List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Query ID</th>
+                    <th>Customer Name</th>
+                    <th>Query</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="query-table-body">
+                <!-- Dynamic rows will be added here -->
+            </tbody>
+        </table>
+
+        <!-- Selected Query Response Section -->
+        <div id="response-section" class="hidden">
+            <h2>Respond to Query</h2>
+            <form id="response-form">
+                <label for="query-id">Query ID</label>
+                <input type="text" id="query-id" disabled>
+
+                <label for="customer-name">Customer Name</label>
+                <input type="text" id="customer-name" disabled>
+
+                <label for="response">Response</label>
+                <textarea id="response" rows="5" required></textarea>
+
+                <button type="button" id="send-response-btn">Send Response</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="staffresponse.js"></script>
+</body>
+</html>
